@@ -1,0 +1,56 @@
+[
+	{
+	  "id": 1,
+	  "title": "Associate Professor",
+	  "name": "Dr. Farzana Deeba",
+	  "dept": "infertility",
+	  "fees": 1000,
+	  "img": "https://i.ibb.co/KDVxYVG/doctor1.jpg",
+	  "details": "Dr. Farzana Deeba Obtained MBBS from Chittagong Medical College in 1987, DGO from Royal College of Physician, Ireland in 1997 & Arab Board in Obst/Gynae (KSA) in 2001.She started her career in Chittagong Medical College & then moved to Saudi Arabia. She worked in Medina Maternity & Children Hospital, KSA & King Faisal Military Hospital till 2006 then joined in Square Hospital & Working as Consultant till now. She attended Fellowship program on minimal invasive surgery in World Laparoscopy Hospital, New Delhi & awarded fellowship (FMAS). She also achieved hands on training on suture less vaginal Hysterectomy from Purohit General Hospital, Orissa, India & Total Laparoscopic Hysterectomy from Sunrise Hospital, Delhi, India."
+	},
+	{
+	  "id": 2,
+	  "title": "Assistant Professor",
+	  "name": "Dr. Haseena",
+	  "dept": "new natal baby",
+	  "fees": 500,
+	  "img": "https://i.ibb.co/cLRwqmk/Healthcare-workers-prevent-virus-insurance-and-medicine-concept-Smiling-attractive-female-doctor-or.jpg",
+	  "details": "Dr. Haseena graduated from Mymensingh Medical College in 1993. After completion of his internship, he joined National Institute of Chest Disease and Hospital. He worked as Anesthesiologist in the Dept. of Anesthesiology of Dhaka Medical College Hospital and Sir Salimullah Medical College and Mitford Hospital. He is a student of the first batch of MD (Anesthesiology) of Dhaka Medical College and achieved MD (Anesthesiology) degree in 2007."
+	},
+	{
+	  "id": 3,
+	  "title": "Surgeon",
+	  "name": "Dr Samad",
+	  "dept": "Anesthesia",
+	  "fees": 500,
+	  "img": "https://i.ibb.co/txZ8NwM/doctor3.jpg",
+	  "details": "Dr Samad graduated from Sir Salimullah Medical College. He joined as Assistant Registrar, Cardiology at the National Institute of Cardiovascular Diseases (NICVD), Dhaka and got intensive training on different aspects of clinical and interventional treatments of various cardiac diseases.obtained MD-Cardiology degree from the same institution (NICVD) and worked there as post-graduate fellow till January, 2007. In January, 2007 he was promoted to Assistant Professor of Cardiology at Comilla Medical College."
+	},
+	{
+	  "id": 4,
+	  "title": "Medical Officer",
+	  "name": "Dr Sharmin",
+	  "dept": "Urology",
+	  "fees": 500,
+	  "img": "https://i.ibb.co/jLR8YqB/doctor4.jpg",
+	  "details": "Dr Sharmin graduated from Mymensingh Medical College. She obtained her professional degree MD (Pathology) under University of Dhaka and MCPS (Clinical pathology) from Bangladesh College of Physicians & Surgeons (BCPS).She worked as Associate Professor and Head in Dhaka Community Medical College & as Assistant Professor in East West Medical College, Dhaka.  She also worked in Holy Family Red Crescent Medical College Hospital as SMO. She gained advanced experience from Osaka University Hospital, Japan & also from India. She has national & international Publications in related field."
+	},
+	{
+	  "id": 5,
+	  "title": "Assistant Professor",
+	  "name": "Dr Maksud",
+	  "dept": "Cardiology",
+	  "fees": 1000,
+	  "img": "https://i.ibb.co/4NYYC4L/doctor5.jpg",
+	  "details": "Dr Maksud graduated from Dhaka Medical College in 1977. He joined in Laboratory Sciences Division of ICDDR,B in 1980 and was trained overseas in diagnostic microbiology and infectious diseases as the fellow of the Dept of Microbiology and Laboratory Medicine, Free University of Brussels, Belgium in 1985-86. He was trained in hematopathology from the then IPGMR (BSMMU) in 1990-92 and obtained the Membership (MCPS) in Clinical Pathology from the Bangladesh College of Physicians and Surgeons (BCPS) in 1992. He also obtained the Membership (MCAP) and Fellowship (FCAP) of the College of American Pathologists in 1999 and 2008 respectively."
+	},
+	{
+	  "id": 6,
+	  "title": "Surgeon",
+	  "name": "Dr Hasan",
+	  "dept": "Dentist",
+	  "fees": 500,
+	  "img": "https://i.ibb.co/Yywys9p/doctor6.jpg",
+	  "details": "Dr Hasan received SAARC Cardiology  hands on Fellowship in Interventional Cardiology at Escorts Heart Institute and Research Centre (EHIR&C), New Delhi, India for 01(one) year in June 2006. Subsequently he was selected for another 01 year hands on Fellowship program in Interventional Cardiology at National Heart Centre, Singapore and received the fellowship award in July 2007.  He has successfully completed Rotablation, Intravascular ultrasound Pressure wire and peripheral stenting course. He also gained and experienced a numerous number of invasive and clinical training and observatory fellowship and visited  USA, Canada, France, England, Japan, Italy, Sweden, Hong Kong, China, Jamaica, Costarica, Vietnam, Malaysia, Thailand, India, Pakistan and Nepal."
+	}
+  ]
