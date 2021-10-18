@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import useAppointment from '../../../hooks/useAppointment';
 import useFetch from '../../../hooks/useFetch';
 import Service from '../Service/Service';
 
 const Services = () => {
-    const [services] =useFetch();
+    
+    const [appointment, setAppointment] = useAppointment();
+    const [services] = useFetch();
     return (
         <>
           <div className="services-area py-5">
@@ -24,6 +28,13 @@ const Services = () => {
                         ></Service>
                         ))}
                     </div>
+                    <div className="mt-4 mb-5 text-center">
+                    {
+                        appointment.length > 0 ? <Link to='/checkout'>
+                        <button className="btn btn-success btn-lg">Checkout Order</button>
+                        </Link> : <button disabled className="btn btn-success btn-lg">Checkout Order</button>
+                    }
+            </div>
                 </div>
             </div>     
         </>
