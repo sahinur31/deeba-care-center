@@ -1,15 +1,13 @@
 import React from 'react';
-import { Badge, Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faStethoscope } from '@fortawesome/free-solid-svg-icons';
 import useAuth from '../../../hooks/useAuth';
-import useAppointment from '../../../hooks/useAppointment';
 
 const Header = () => {
     const { user, logOut } = useAuth();
-    const [appointment, setAppointment] = useAppointment();
     return (
         <>
             <Navbar bg="" variant="dark" sticky="top" collapseOnSelect expand="lg" >
@@ -21,19 +19,8 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} className="text-dark" to="/home">Home</Nav.Link>
-                        {
-                            
-                            appointment.length > 0 ?
-                            <Nav.Link  className="text-dark" to="/checkout">
-                                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-                                <Badge bg="secondary">{appointment.length}</Badge>
-                            </Nav.Link>
-                            :
-                            <Nav.Link  className="text-dark" to="/checkout">
-                                <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
-                                <Badge bg="secondary">{appointment.length}</Badge>
-                            </Nav.Link>
-                        } 
+                        <Nav.Link as={Link} className="text-dark" to="/shop">Shop</Nav.Link>
+                        <Nav.Link as={Link} className="text-dark" to="/latestnews">News</Nav.Link>
                         
                         <Nav.Link as={Link} className="text-dark" to="/signup">Sign up</Nav.Link>
                         <Navbar.Text className="text-dark">

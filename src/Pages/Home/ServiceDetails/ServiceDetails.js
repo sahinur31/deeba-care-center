@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router';
 import useFetch from '../../../hooks/useFetch';
 import {
@@ -9,20 +9,14 @@ import {
   } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './ServiceDetails.css';
-import useAppointment from '../../../hooks/useAppointment';
+// import useAppointment from '../../../hooks/useAppointment';
 
 const ServiceDetails = () => {
     let { id } = useParams();
     const [ services ] = useFetch();
-    const [appointment, setAppointment] = useAppointment(services);
-    const [quantity, setQuantity] = useState(0);
     const detail = services.find(service => service.id == id);
-
-    const handleAppointment = (item) => {
-        item.quantity = 1;
-        const newAppointment = [...appointment, item];
-        setAppointment(newAppointment);
-    }
+    /* const [appointment, setAppointment] = useAppointment();
+    const {handleAppointment} =useAppointment(); */
     return (
         <>
             <div className="services-area py-5">
@@ -57,7 +51,6 @@ const ServiceDetails = () => {
                                 <h2 className="mb-4">Hello! I am {detail?.name} Introducing Myself</h2>
                                 <p>{detail?.details}</p>
                                 <button
-                                onClick={() => handleAppointment(detail)}
                                 className="btn mt-4 text-center text-white theme-bg">Make an Appointment</button>
                                 
                             </div>

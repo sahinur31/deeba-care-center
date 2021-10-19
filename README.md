@@ -4,14 +4,16 @@ This project was created in:
 <li>React JS </li>
 <li> React Font Awesome</li>
 <li>React Router Dom</li>
+<li>React firebase for authentication</li>
 <li>React Bootstrap</li>
 <li>Fully Responsive</li>
 
 ## Live Site Link
 
-This project deploy in netlify website: Live site link: (https://deeba-care-nur.netlify.app)
+This project deploy in netlify website: Live site link: (https://deeba-care-center.web.app/)
 
 ### Project Feature:
+
 This project have four pages
     <ol>
         <li> Home Page

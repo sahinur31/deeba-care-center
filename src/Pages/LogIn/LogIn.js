@@ -41,11 +41,11 @@ const LogIn = () => {
                     <div className="row">
                         <div className="col-md-3 mx-auto p-0">
                             <div className="login-form text-center">
-                            {
-                                error && <div className="alert alert-danger" role="alert">
-                                    {error}
-                                </div>
-                            }
+                                {
+                                    error && <div className="alert alert-danger" role="alert">
+                                        {error}
+                                    </div>
+                                }
                                 <form onSubmit={handleSignIn}>
                                     <input
                                     onBlur={(e) => setEmail(e.target.value)}

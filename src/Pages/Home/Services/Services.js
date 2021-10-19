@@ -1,12 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import useAppointment from '../../../hooks/useAppointment';
 import useFetch from '../../../hooks/useFetch';
 import Service from '../Service/Service';
 
 const Services = () => {
     
-    const [appointment, setAppointment] = useAppointment();
     const [services] = useFetch();
     return (
         <>

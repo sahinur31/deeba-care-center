@@ -1,3 +1,9 @@
 .single-service img {
     height: 343px;
 }
+.single-service  {
+    transition: .3s;
+}
+.single-service:hover {
+    transform: scale(1.1);
+}

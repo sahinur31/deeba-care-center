@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = ({service}) => {
-    const {img,fees,title,name,id,dept} =service;
+    const {img,fees,title,name,id,dept,details} =service;
     return (
         <>
             <div className="col-lg-4">
@@ -19,6 +19,7 @@ const Service = ({service}) => {
                         </div>
                     </div>
                     <h6>Fees: {fees}</h6>
+                    <p className="text-justify">{details.slice(1,110)}</p>
                     <div className="text-center">
                         <Link to={`/service/${id}`}>
                             <button className="btn text-center text-white theme-bg">See Details</button>
