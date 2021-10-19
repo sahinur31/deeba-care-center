@@ -19,7 +19,7 @@ const Footer = () => {
                         <div className="footer-logo">
                         <h5 className="theme-color f-logo"><FontAwesomeIcon icon={faStethoscope}></FontAwesomeIcon>
                          deeba <span className="text-white">Care</span></h5>
-                         <p>Lorem ipsum dolor sit amet consectetur adipiscing <br /> elit sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                         <p>In the year 2012, 1st March, Deeba Care Center. going to establish, with the promise to give the best and modern healthcare facilities to the people of newly developed Rampura Banasree, ...</p>
                         </div>
                         <div className="icons-container d-flex text-center ">
                             <div className="icon">

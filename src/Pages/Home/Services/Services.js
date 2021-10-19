@@ -16,7 +16,7 @@ const Services = () => {
                         <div className="col-md-6">
                             <div className="section-title text-center">
                                 <h1 className="theme-color">Our Doctors Services</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco labor.</p>
+                               <p>Our Best doctors service are available here. This section is for doctors service.</p>
                             </div>
                         </div>
                     </div>
@@ -28,13 +28,6 @@ const Services = () => {
                         ></Service>
                         ))}
                     </div>
-                    <div className="mt-4 mb-5 text-center">
-                    {
-                        appointment.length > 0 ? <Link to='/checkout'>
-                        <button className="btn btn-success btn-lg">Checkout Order</button>
-                        </Link> : <button disabled className="btn btn-success btn-lg">Checkout Order</button>
-                    }
-            </div>
                 </div>
             </div>     
         </>
