@@ -26,9 +26,15 @@ This project have four pages
                 <li>Home Page with a footer section</li>
             </ul>
         </li>
-        <li> Checkout Page
+        <li> Shop Page
              <ul>
-                <li>If a  user make an appointment, they will see this page</li>
+                <li>If a  user want to buy medical instrument, they use this.</li>
+                <li>This is a private route</li>
+            </ul>
+        </li>
+        <li> News Page
+             <ul>
+                <li>Latest news will going here</li>
                 <li>This is a private route</li>
             </ul>
         </li>
