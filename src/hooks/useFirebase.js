@@ -9,18 +9,20 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     
+    
 
     const auth = getAuth();
-
+    const googleProvider= new GoogleAuthProvider()
     const signInUsingGoogle = () => {
-        setIsLoading(true);
+        return  signInWithPopup(auth, googleProvider)
+        /* setIsLoading(true);
         const googleProvider = new GoogleAuthProvider();
 
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 setUser(result.user);
             })
-            .finally(() => setIsLoading(false));
+            .finally(() => setIsLoading(false)); */
     }
 
     // observe user state change
@@ -50,6 +52,7 @@ const useFirebase = () => {
         user,
         setUser,
         isLoading,
+        setIsLoading,
         signInUsingGoogle,
         logOut
     }

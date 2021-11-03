@@ -4,10 +4,11 @@ import './LogIn.css';
 import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 
 
 const LogIn = () => {
-    const { signInUsingGoogle, logOut, user, setUser } = useAuth();
+    const { signInUsingGoogle, logOut, user, setUser,setIsLoading } = useAuth();
 
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
@@ -20,6 +21,22 @@ const LogIn = () => {
 
   
     const auth = getAuth();
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+          .then((res) => 
+            {
+              setIsLoading(true)
+              setUser(res.user)
+              swal("Sign in Successful!", "Welcome back !", "success")
+              history.push(redirect_url)
+            }
+              )
+          .catch((err) => swal("Something went wrong!", `${err.message}`, "error"))
+          .finally(() => {
+            setIsLoading(false)
+          })
+      };
+
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -62,7 +79,7 @@ const LogIn = () => {
 
                                 {
                                     (!user?.displayName) ?
-                                    <button onClick={signInUsingGoogle} className="btn mt-3 theme-bg text-white">
+                                    <button onClick={handleGoogleLogin} className="btn mt-3 theme-bg text-white">
                                     Google Sign In
                                     </button>
                                     :
